@@ -12,7 +12,6 @@ public class GameManager : MonoBehaviour
     // Game characters.
     private Object _myHurdlePrefab;
 
-
     // UI elements.
     private GameObject _myScoreText;
     private GameObject _myGameOverText;

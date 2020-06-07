@@ -10,6 +10,9 @@ public class Player : MonoBehaviour
     float _myJumpForce = 2.4f;
     bool _isGrounded;
 
+    [SerializeField]
+    private UnityEngine.Object _myExplosionPrefab;
+
     Vector3 _myJumpDirection;
     Rigidbody2D _myRigidBody;
     GameObject _myGameManager;
@@ -33,8 +36,12 @@ public class Player : MonoBehaviour
 
         if (Col.gameObject.tag == "Hurdle")
         {
-            Debug.Log("Collided");
             _myGameManager.GetComponent<GameManager>().SetGameOver();
+            _myAnimator.SetBool("isDead", true);
+            Instantiate(
+                _myExplosionPrefab,
+                new Vector2(transform.position.x, transform.position.y),
+                Quaternion.identity);
             Destroy(this.gameObject);
         }
     }
