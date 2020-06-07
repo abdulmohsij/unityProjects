@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour
         {
             Instantiate(
                 _myHurdlePrefab, 
-                new Vector3(12.5f, -0.2f, 0), 
+                new Vector3(12.5f, 0.1f, 0), 
                 Quaternion.identity);
             float secondsToWait = Random.Range(0.5f, 3.0f);
             yield return new WaitForSeconds(secondsToWait);
