@@ -1165,7 +1165,7 @@ PrefabInstance:
     - target: {fileID: 4270799057646673702, guid: 2c763e242474cf940b7fbf0dc562e511,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.16257761
+      value: -0.1625776
       objectReference: {fileID: 0}
     - target: {fileID: 4270799057646673702, guid: 2c763e242474cf940b7fbf0dc562e511,
         type: 3}
@@ -1250,9 +1250,9 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 1.1302259
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 1.2
   m_Material: {fileID: 0}
   m_Interpolate: 0
